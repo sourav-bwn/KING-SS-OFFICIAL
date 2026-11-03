@@ -1,25 +1,30 @@
-- 👋 Hi, I’m @KING-SS-OFFICIAL
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# KING-SS-OFFICIAL
 
-## Security Knowledge Base
+A collection of my projects: two mobile-first apps and a defensive security reference tool.
 
-This repository includes a `security_knowledge_base.py` tool. This is an educational utility designed to provide information about common cybersecurity concepts and tools from a defensive perspective.
+## Projects
 
-### How to Run
+### my-ai-friend
 
-1.  Ensure you have Python 3 installed.
-2.  Run the script from the command line:
+A personalized, talkable AI companion mobile app built with React Native and Expo.
 
-    ```bash
-    python3 security_knowledge_base.py
-    ```
+- Converses with you using Text-to-Speech
+- Configurable persona, using your own OpenAI API key
+- Boilerplate for background tasks
+- Runs on iOS and Android
 
-3.  Follow the on-screen menu to explore different security categories and learn about mitigation strategies.
+See `my-ai-friend/README_APP.md` for setup instructions.
 
-<!---
-KING-SS-OFFICIAL/KING-SS-OFFICIAL is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### shield-prep-wb
+
+An exam-preparation app with a React Native mobile client (`shield-prep-wb/mobile`) and an Express backend (`shield-prep-wb/backend`) with JWT-based authentication, an AI study buddy screen, a student dashboard, progress tracking, and secure content delivery.
+
+### security_knowledge_base.py
+
+An educational command-line reference for common cybersecurity concepts and tools, written from a defensive perspective. Each entry explains what a technique or tool does and how to defend against it (network scanning, web application security, password security, and more).
+
+Requires Python 3. Run it with:
+
+```bash
+python3 security_knowledge_base.py
+```

@@ -93,6 +93,9 @@ app.post('/auth/login', (req, res) => {
 
 app.post('/auth/register', (req, res) => {
     const { phone, password, name, deviceId } = req.body;
+    if (!phone || !password || !name) {
+        return res.status(400).json({ message: 'phone, password and name are required' });
+    }
     if (users.find(u => u.phone === phone)) {
         return res.status(400).json({ message: 'User already exists' });
     }
@@ -119,7 +122,7 @@ app.get('/content', authenticateToken, (req, res) => {
 // --- Admin Routes (Teacher) ---
 app.get('/admin/users', authenticateToken, (req, res) => {
     if (req.user.role !== 'Teacher') return res.sendStatus(403);
-    res.json(users);
+    res.json(users.map(({ password, ...safeUser }) => safeUser));
 });
 
 app.post('/admin/approve', authenticateToken, (req, res) => {
@@ -174,6 +177,10 @@ app.get('/dashboard', (req, res) => {
     res.sendFile(__dirname + '/dashboard.html');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+    });
+}
+
+module.exports = app;
