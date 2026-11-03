@@ -93,6 +93,9 @@ app.post('/auth/login', (req, res) => {
 
 app.post('/auth/register', (req, res) => {
     const { phone, password, name, deviceId } = req.body;
+    if (!phone || !password || !name) {
+        return res.status(400).json({ message: 'phone, password and name are required' });
+    }
     if (users.find(u => u.phone === phone)) {
         return res.status(400).json({ message: 'User already exists' });
     }
