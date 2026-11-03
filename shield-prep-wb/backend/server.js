@@ -119,7 +119,7 @@ app.get('/content', authenticateToken, (req, res) => {
 // --- Admin Routes (Teacher) ---
 app.get('/admin/users', authenticateToken, (req, res) => {
     if (req.user.role !== 'Teacher') return res.sendStatus(403);
-    res.json(users);
+    res.json(users.map(({ password, ...safeUser }) => safeUser));
 });
 
 app.post('/admin/approve', authenticateToken, (req, res) => {
