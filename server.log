@@ -1,0 +1,12 @@
+127.0.0.1 - - [30/Dec/2025 14:37:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:37:02] "GET /_expo/static/js/web/AppEntry-3a10495cc0a5cd1c942cd8adb1b315cb.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:37:03] "GET /assets/node_modules/@react-navigation/elements/lib/module/assets/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:37:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:37:29] "GET /_expo/static/js/web/AppEntry-3a10495cc0a5cd1c942cd8adb1b315cb.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:37:29] "GET /assets/node_modules/@react-navigation/elements/lib/module/assets/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:52:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:52:35] "GET /_expo/static/js/web/AppEntry-3a10495cc0a5cd1c942cd8adb1b315cb.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:52:36] "GET /assets/node_modules/@react-navigation/elements/lib/module/assets/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:53:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:53:35] "GET /_expo/static/js/web/AppEntry-acf76cc126d7974eb17f7e8248aeb24f.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Dec/2025 14:53:35] "GET /assets/node_modules/@react-navigation/elements/lib/module/assets/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png HTTP/1.1" 200 -

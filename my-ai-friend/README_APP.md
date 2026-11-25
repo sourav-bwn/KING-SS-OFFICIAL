@@ -1,13 +1,29 @@
-# My AI Friend
+# AutoInsta (formerly My AI Friend)
 
-A personalized talkable AI mobile app built with React Native and Expo.
+A comprehensive Instagram Automation App powered by **Jarvis AI**. This application allows you to generate and manage Instagram accounts, automate interactions, and monitor progress through a futuristic "hands-free" interface.
 
 ## Features
 
-- **Talkable**: Converses with you using Text-to-Speech.
-- **Personalized**: Configurable "Persona" and connects to your own OpenAI API key.
-- **Background Capable**: Includes boilerplate for background task execution (e.g., fetching updates).
-- **Cross-Platform**: Runs on iOS and Android.
+- **Automated Account Creation**:
+  - Support for Gmail and Mobile number verification.
+  - Automated OTP reading (Mock).
+  - Customizable profile generation (Bio, Profile Pic).
+
+- **Jarvis AI Integration**:
+  - **Hands-Free Operation**: Auto-activates on launch.
+  - **Voice Feedback**: Simulated voice interaction.
+  - **Edge Lighting**: Visual feedback with customizable neon animations.
+  - **Problem Solving**: Automated issue logging and resolution attempts.
+
+- **Automation Tools**:
+  - **Target Account Automation**: Auto-follow, like, comment, and share.
+  - **Auto-Posting**: Schedule random photo posts to keep accounts active.
+  - **Manage Mobile Numbers**: Add and track mobile numbers for verification.
+
+- **Dashboard**:
+  - Real-time progress monitoring.
+  - Status updates from Jarvis.
+  - Detailed list of generated accounts and their status.
 
 ## Setup Instructions
 
@@ -21,21 +37,19 @@ A personalized talkable AI mobile app built with React Native and Expo.
     npx expo start
     ```
     - Scan the QR code with the Expo Go app on your phone.
+    - Or press `w` to run in the web browser.
 
-## Configuration
+## Screens Overview
 
-1.  Open the app on your device.
-2.  Tap the **Settings (⚙️)** icon in the top right.
-3.  Enter your **OpenAI API Key** (get one at [platform.openai.com](https://platform.openai.com/)).
-4.  (Optional) Customize the **Persona** to change how the AI behaves (e.g., "You are a sarcastic robot").
-5.  Save.
+- **Welcome Screen**: Introduction to the app.
+- **Setup**: Configure your account generation settings (Gmail/Mobile, Password).
+- **Dashboard**: Monitor the generation process and Jarvis status.
+- **Account Details**: View credentials and status of created accounts.
+- **Settings**: Configure Jarvis (Voice, Edge Lighting) and Automation rules.
+- **Target Automation**: Set up actions against specific Instagram users.
+- **Jarvis Log**: View a history of problems solved by the AI.
 
-## Usage
+## Notes
 
-- **Type to chat**: Use the text input.
-- **Voice Input**: Use the microphone icon on your mobile keyboard to dictate text.
-- **Voice Output**: The AI reads responses aloud by default. Toggle this with the speaker icon.
-
-## Background Execution Note
-
-"Always listening" background AI requires significant battery and specific permissions that are often restricted by OS policies. This app demonstrates how to register background tasks (`src/services/BackgroundService.js`) which can be extended for periodic checks or notifications.
+- This is a UI/UX implementation in React Native.
+- The actual backend logic for Instagram interaction, OTP reading, and advanced AI is simulated for demonstration purposes.
